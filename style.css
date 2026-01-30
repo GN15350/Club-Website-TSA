@@ -297,7 +297,10 @@ body {
     height: 15dvh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    font-family: Barlow;
+    align-items: center;
 }
 
 .logoFooter {
@@ -305,4 +308,33 @@ body {
     height: auto;
     object-fit: contain;
     left: 10dvh;
+    margin-left: 2dvh;
 }
+
+.websiteName {
+    font-size: 3svh;
+    display: flex;
+    margin-left: 2dvh;
+}
+
+.verticalFooter {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footerTitle {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.footerRow {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    padding-right: 2dvh;
+    gap: 6dvh;
+}
+
