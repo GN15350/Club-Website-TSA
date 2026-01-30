@@ -1,0 +1,161 @@
+body {
+    background-color: #EFEFEF;
+    padding: 0;
+    margin: 0;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background-color: black;
+    width: 100%;
+    height: 100dvh;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('fonts/Barlow-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow-bold';
+    src: url('fonts/Barlow-Black.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.header {
+    color: black;
+    position: fixed;
+    width: 100%;
+    height: 6dvh;
+    top: 0;
+    z-index: 6;
+    padding: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    color: white;
+}
+
+.header.scrolled {
+    background-color: rgb(48, 48, 48);
+}
+  
+.header-right {
+    display: flex;
+    gap: 2dvh;
+    right: 2dvh;
+    position: fixed;
+}
+
+.logo-main {
+    max-width: 6dvh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    left: 2dvh;
+    position: fixed;
+    cursor: pointer;
+}
+
+
+.mainPhoto {
+    width: 100%;
+    height: 100dvh;
+    opacity: 0.7;
+    z-index: 2;
+    position: absolute;
+}
+
+.headerLinks {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100dvh;
+    z-index: 3;
+}
+
+
+.littleTitle {
+    color: white;
+    z-index: inherit;
+    font-family: Barlow;
+    font-weight: bold;
+    font-size: 3dvh;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.title {
+    color: white;
+    z-index: inherit;
+    font-family: Barlow-bold;
+    font-size: 13dvh;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 5vh;
+}
+
+.viewAll {
+    color: white;
+    z-index: inherit;
+    background-color: #0033A0;
+    border: none;
+    font-family: Barlow;
+    cursor: pointer;
+    border-radius: 74px;
+    width: 25dvh;
+    padding-top: 1dvh;
+    padding-bottom: 1dvh;
+    font-size: 2vh;
+}
+
+.logo {
+    padding: 2vh;
+    width: 50dvh;
+}
+
+.layout2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    color: #0033A0;
+    font-family: Barlow-bold;
+    font-size: 5dvh;
+    margin-left: 10dvh;
+    margin-bottom: 0dvh;
+}
+
+.ourStory{
+    color: black;
+    z-index: 1;
+    max-width: 80dvh;
+    font-family: Barlow;
+    margin-left: 10dvh;
+    font-size: 3.5dvh;
+}
