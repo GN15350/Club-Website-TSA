@@ -307,6 +307,8 @@ body {
     flex-direction: column;
     text-align: center;
     font-family: Barlow;
+    padding-left: 10dvh;
+    padding-right: 10dvh;
 }
 
 .header2 {
