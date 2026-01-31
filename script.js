@@ -7,3 +7,8 @@ const header = document.querySelector('.header');
             header.classList.remove('scrolled');
         }
     });
+document.getElementById("viewInfo").addEventListener("click", () => {
+    document.getElementById("info").scrollIntoView({
+        behavior: "smooth"
+    });
+});
