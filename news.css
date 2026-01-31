@@ -38,7 +38,7 @@ body {
     color: black;
     position: fixed;
     width: 100%;
-    height: 6dvh;
+    height: 10dvh;
     top: 0;
     z-index: 6;
     padding: 0;
@@ -62,7 +62,7 @@ body {
 }
 
 .logo-main {
-    max-width: 6dvh;
+    max-width: 9dvh;
     padding: 0;
     margin: 0;
     display: flex;
@@ -332,4 +332,5 @@ body {
     padding-bottom:1.5dvh;
     width: 20dvh;
     font-size: 1.5dvh;
+
 }
