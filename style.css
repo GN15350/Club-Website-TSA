@@ -381,6 +381,14 @@ body {
     display: none;
 }
 
+.xButton {
+    display: none;
+}
+
+.logo-mobile {
+    display: none;
+}
+
 
 
 @media (max-width: 600px){
@@ -458,6 +466,10 @@ body {
     top: 2dvh;
     right: 2dvh;
     max-width: 5dvh;
+}
+
+.xButton {
+    display: block;
 }
 
 .bar {
