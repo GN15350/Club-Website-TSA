@@ -131,6 +131,7 @@ body {
     color: white;
     font-family: Barlow;
     align-items: center;
+    z-index: 2;
 }
 
 .logoFooter {
@@ -168,3 +169,21 @@ body {
     gap: 6dvh;
 }
 
+
+
+.bodyLayout {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+.bodyLayout iframe {
+    padding-top: 4dvh;
+    margin: 0;
+    min-height: 95dvh;
+    width: 40%;
+    border: 0;
+    z-index: 1;
+}
