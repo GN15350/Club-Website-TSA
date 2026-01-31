@@ -152,6 +152,8 @@ body {
     position: relative;
     flex-direction: column;
     justify-content: center;
+    padding-left: 5dvh;
+    padding-right: 3dvh;
 }
 
 .footerTitle {
