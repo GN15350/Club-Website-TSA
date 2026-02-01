@@ -15,6 +15,11 @@ fetch("Clubs - Clubs_Raw.csv")
       skipEmptyLines: true
     });
 
+    parsed.data.forEach(club => {
+      const img = new Image();
+      img.src = `clubLogos/${club.logo.trim()}`; 
+    });
+
     const buttonContainer = document.getElementById("clubButtons");
     const infoBox = document.getElementById("clubInfo");
 
@@ -29,14 +34,14 @@ fetch("Clubs - Clubs_Raw.csv")
 
       const btn = document.createElement("button");
       btn.innerHTML = `
-        <img src="logos/${logo}" class="clubLogo">
+        <img src="clubLogos/${logo}" class="clubLogo"> <br>
         <span>${name}</span>
       `;
 
       btn.addEventListener("click", () => {
         infoBox.innerHTML = `
           <h1>${name}</h1>
-          <img src="logos/${logo}" style="width:120px">
+          <img src="clubLogos/${logo}" style="width:120px">
           <p>Description: ${description}</p>
           <ul>
             <li><strong>Meetings:</strong> ${meetings}</li>
