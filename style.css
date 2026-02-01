@@ -3,7 +3,7 @@ body {
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
     overflow-x: hidden;
 }
 
@@ -13,7 +13,7 @@ body {
     z-index: 1;
     background-color: black;
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
 }
 
 @font-face {
@@ -41,7 +41,7 @@ body {
     color: black;
     position: fixed;
     width: 100%;
-    height: 10dvh;
+    height: 10vh;
     top: 0;
     z-index: 6;
     padding: 0;
@@ -59,24 +59,24 @@ body {
   
 .header-right {
     display: flex;
-    gap: 2dvh;
-    right: 2dvh;
+    gap: 2vh;
+    right: 2vh;
     position: fixed;
 }
 
 .logo-desktop {
-    max-width: 9dvh;
+    max-width: 9vh;
     padding: 0;
     margin: 0;
     display: flex;
-    left: 2dvh;
+    left: 2vh;
     position: fixed;
     cursor: pointer;
 }
 
 .mainPhoto {
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
     opacity: 0.7;
     z-index: 2;
     position: absolute;
@@ -104,7 +104,7 @@ body {
     z-index: inherit;
     font-family: Barlow;
     font-weight: bold;
-    font-size: 3dvh;
+    font-size: 3vh;
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -113,7 +113,7 @@ body {
     color: white;
     z-index: inherit;
     font-family: Barlow-bold;
-    font-size: 13dvh;
+    font-size: 13vh;
     padding-top: 0;
     margin-top: 0;
     margin-bottom: 5vh;
@@ -127,15 +127,15 @@ body {
     font-family: Barlow;
     cursor: pointer;
     border-radius: 74px;
-    width: 25dvh;
-    padding-top: 1dvh;
-    padding-bottom: 1dvh;
+    width: 25vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     font-size: 2vh;
 }
 
 .logo {
     padding: 2vh;
-    width: 50dvh;
+    width: 50vh;
 }
 
 .layout2 {
@@ -148,36 +148,36 @@ body {
 .heading {
     color: #0033A0;
     font-family: Barlow-bold;
-    font-size: 5dvh;
-    margin-left: 10dvh;
-    margin-bottom: 0dvh;
+    font-size: 5vh;
+    margin-left: 10vh;
+    margin-bottom: 0vh;
 }
 
 .ourStory{
     color: black;
     z-index: 1;
-    max-width: 80dvh;
+    max-width: 80vh;
     font-family: Barlow;
-    margin-left: 10dvh;
-    font-size: 3.5dvh;
+    margin-left: 10vh;
+    font-size: 3.5vh;
 }
 
 
 .heading2 {
     color: white;
     font-family: Barlow-bold;
-    font-size: 5dvh;
-    margin-left: 10dvh;
-    margin-bottom: 0dvh;
+    font-size: 5vh;
+    margin-left: 10vh;
+    margin-bottom: 0vh;
 }
 
 .clubDescription{
     color: white;
     z-index: 1;
-    max-width: 80dvh;
+    max-width: 80vh;
     font-family: Barlow;
-    margin-left: 10dvh;
-    font-size: 3.5dvh;
+    margin-left: 10vh;
+    font-size: 3.5vh;
 }
 
 
@@ -186,15 +186,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 4dvh;
-    margin-bottom: 4dvh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
 }
 
 .clubJoin{
     color: black;
     width: 90%;
     font-family: Barlow;
-    font-size: 3.5dvh;
+    font-size: 3.5vh;
     text-align: center;
 }
 
@@ -244,11 +244,11 @@ body {
     font-weight: bold;
     cursor: pointer;
     border-radius: 74px;
-    width: 25dvh;
-    padding-top: 1dvh;
-    padding-bottom: 1dvh;
+    width: 25vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     font-size: 2vh;
-    margin-left: 10dvh;
+    margin-left: 10vh;
 }
 
 .viewAll4 {
@@ -260,11 +260,11 @@ body {
     font-weight: bold;
     cursor: pointer;
     border-radius: 74px;
-    width: 25dvh;
-    padding-top: 1dvh;
-    padding-bottom: 1dvh;
+    width: 25vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     font-size: 2vh;
-    margin-left: 10dvh;
+    margin-left: 10vh;
 }
 
 
@@ -292,18 +292,18 @@ body {
 .heading3 {
     color: white;
     font-family: Barlow-bold;
-    font-size: 5dvh;
-    margin-right: 10dvh;
-    margin-bottom: 0dvh;
+    font-size: 5vh;
+    margin-right: 10vh;
+    margin-bottom: 0vh;
 }
 
 .clubDescription2 {
     color: white;
     z-index: 1;
-    max-width: 80dvh;
+    max-width: 80vh;
     font-family: Barlow;
-    margin-right: 10dvh;
-    font-size: 3.5dvh;
+    margin-right: 10vh;
+    font-size: 3.5vh;
 }
 
 .viewAll3 {
@@ -315,16 +315,16 @@ body {
     font-weight: bold;
     cursor: pointer;
     border-radius: 74px;
-    width: 25dvh;
-    padding-top: 1dvh;
-    padding-bottom: 1dvh;
+    width: 25vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     font-size: 2vh;
-    margin-right: 10dvh;
+    margin-right: 10vh;
 }
 
 
 .footer {
-    height: 15dvh;
+    height: 15vh;
     display: flex;
     flex-direction: row;
     background-color: rgb(48, 48, 48);
@@ -334,17 +334,17 @@ body {
 }
 
 .logoFooter {
-    max-width: 10dvh;
+    max-width: 10vh;
     height: auto;
     object-fit: contain;
-    left: 10dvh;
-    margin-left: 2dvh;
+    left: 10vh;
+    margin-left: 2vh;
 }
 
 .websiteName {
     font-size: 3svh;
     display: flex;
-    margin-left: 2dvh;
+    margin-left: 2vh;
 }
 
 .verticalFooter {
@@ -352,8 +352,8 @@ body {
     position: relative;
     flex-direction: column;
     justify-content: center;
-    padding-left: 5dvh;
-    padding-right: 3dvh;
+    padding-left: 5vh;
+    padding-right: 3vh;
 }
 
 .footerTitle {
@@ -366,8 +366,8 @@ body {
     display: flex;
     flex-direction: row;
     margin-left: auto;
-    padding-right: 2dvh;
-    gap: 6dvh;
+    padding-right: 2vh;
+    gap: 6vh;
 }
 
 .overlay {
@@ -392,12 +392,16 @@ body {
     display: none;
 }
 
+.header-background {
+    display: none;
+}
+
 
 
 @media (max-width: 600px){
 .header {
-    background-color: #292929;
-    height: 100dvh;
+    background-color: rgb(48, 48, 48);
+    height: 100vh;
     width: 60%;
     right: 0;
     z-index: 6;
@@ -410,24 +414,66 @@ body {
     transform: translateX(0);
 }
 
+.header-background.show {
+    top: 0;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    display: block;
+    background-color: rgb(48, 48, 48);
+}
+
+.ourStory {
+    margin: 2vh;
+}
+
+.heading {
+    margin: 0;
+}
+
+.heading2 {
+    margin: 0;
+    margin-top: 2vh;
+}
+
+.clubDescription {
+    margin: 2vh;
+}
+
+.viewAll2 {
+    margin: 0;
+    margin-bottom: 2vh;
+}
+
+.viewAll3 {
+    margin: 0;
+    margin-bottom: 2vh;
+}
+
+.viewAll4 {
+    margin: 0;
+    margin-bottom: 2vh;
+}
 
 .header-right {
     display: flex;
     flex-direction: column;
-    top: 10dvh;
+    top: 10vh;
     text-align: end;
-    top: 13dvh;
-    right: 8dvh;
-    background-color: #292929;
-    font-size: 3dvh;
-    gap: 3dvh;
+    top: 13vh;
+    right: 8vh;
+    background-color: transparent;
+    font-size: 3vh;
+    gap: 3vh;
     transition: transform 0.3s ease;
 }
 
 .mainPhoto {
     object-fit: cover;
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
     top: 0;
 }
 
@@ -435,7 +481,7 @@ body {
     display: block;
     background-color: #292929;
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
     position: absolute;
     top: 0;
     right: 0;
@@ -452,12 +498,12 @@ body {
   }
 
 .logo-mobile {
-    max-width: 8dvh;
+    max-width: 8vh;
     padding: 0;
     margin: 0;
     display: flex;
-    left: 2dvh;
-    top: 2dvh;
+    left: 2vh;
+    top: 2vh;
     position: fixed;
     cursor: pointer;
     z-index: 6;
@@ -467,9 +513,9 @@ body {
     display: block;
     position: absolute;
     z-index: 7;
-    top: 2dvh;
-    right: 2dvh;
-    max-width: 5dvh;
+    top: 2vh;
+    right: 2vh;
+    max-width: 5vh;
 }
 
 .xButton {
@@ -479,9 +525,9 @@ body {
 .bar {
     display: block;
     position: fixed;
-    width: 4.5dvh;
-    top: 1dvh;
-    right: 2dvh;
+    width: 4.5vh;
+    top: 2vh;
+    right: 2vh;
     z-index: 6;
 }
 
@@ -505,9 +551,105 @@ body {
     text-align: center;
     width: 100%;
 }
+
+.layout2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+body, html {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.layout3 {
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 40dvh;
+}
+
+.layout4 {
+    flex-direction: column;
+}
+
+.layout5 {
+    flex-direction: column-reverse;
+}
+
+.layout6 {
+    flex-direction: column;
+}
+
+.halfPhoto {
+    width: 100%;
+}
+.vertical2 {
+    text-align: center;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.vertical3 {
+    text-align: center;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.footer {
+    max-width: 100%;
+    height: fit-content;
+    padding: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(48, 48, 48);
+    text-align: center;
+}
+
+.verticalFooter {
+    top: 0;
+    padding: 0;
+    margin: 0;
+   min-width: fit-content;
+}
+.footerRow {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+.websiteName {
+    margin: 0;
+    padding: 0;
+}
+.logoFooter {
+    margin-left: -1vh;
+    padding: 0;
+    left: 0;
+    padding-bottom: 0.5vh;
+}
+.footerP {
+    margin-top: 1vh;
+}
+
+.footerTitle {
+    padding-top: 3vh;
+}
 }
 #info {
-    scroll-margin-top: 27dvh
+    scroll-margin-top: 27vh
 }
 
 #info {

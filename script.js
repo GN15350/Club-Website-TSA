@@ -15,6 +15,13 @@ document.getElementById("viewInfo").addEventListener("click", () => {
 });
 
 
+const headerbackground = document.querySelector('.header-background');
+window.addEventListener("scroll", () => {
+    if (window.innerWidth > 600) return;
+    headerbackground.classList.toggle("show", window.scrollY > 50);
+});
+
+
 
 
 
