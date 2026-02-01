@@ -179,7 +179,21 @@ body {
 #clubInfo {
   text-align: center;      
   margin-bottom: 5dvh;
-  margin-left: 4dvh;
-  margin-right: 4dvh;
+  margin-left: 20dvh;
+  margin-right: 20dvh;
   
+}
+.clubLogo {
+  width: 50px;       
+  height: 50px;      
+  object-fit: contain; 
+  margin-right: 8px;  
+  vertical-align: middle; 
+}
+#clubButtons {
+  display: flex;          
+  flex-wrap: wrap;         
+  justify-content: center;  
+  gap: 10px;                
+  padding: 20px;            
 }
