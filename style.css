@@ -497,3 +497,7 @@ body {
     z-index: 6;
 }
 }
+
+#info {
+    scroll-margin-top: 27dvh;
+}
