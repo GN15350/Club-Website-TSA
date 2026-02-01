@@ -39,6 +39,7 @@ fetch("Clubs - Clubs_Raw.csv")
       `;
 
       btn.addEventListener("click", () => {
+
         infoBox.innerHTML = `
           <h1>${name}</h1>
           <img src="clubLogos/${logo}" style="width:120px">
@@ -49,6 +50,9 @@ fetch("Clubs - Clubs_Raw.csv")
             <li><strong>Sponsor:</strong> ${teacherName}, ${sponsorRoom}</li>
           </ul>
         `;
+        infoBox.classList.add("show")
+        overlay.classList.add("show");
+
       });
 
       buttonContainer.appendChild(btn);
