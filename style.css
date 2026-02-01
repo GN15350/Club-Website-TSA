@@ -2,6 +2,9 @@ body {
     background-color: #EFEFEF;
     padding: 0;
     margin: 0;
+    width: 100%;
+    height: 100dvh;
+    overflow-x: hidden;
 }
 
 .background {
@@ -91,7 +94,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
     z-index: 3;
 }
 
@@ -399,7 +402,7 @@ body {
     right: 0;
     z-index: 6;
 
-    transform: translateX(+100%);
+    transform: translateX(100%);
     transition: transform 0.3s ease;
 }
 
@@ -425,6 +428,7 @@ body {
     object-fit: cover;
     width: 100%;
     height: 100dvh;
+    top: 0;
 }
 
 .overlay {
@@ -496,6 +500,14 @@ body {
     border: none;
     z-index: 6;
 }
+
+.title {
+    text-align: center;
+    width: 100%;
+}
+}
+#info {
+    scroll-margin-top: 27dvh
 }
 
 #info {
