@@ -41,6 +41,7 @@ fetch("Clubs - Clubs_Raw.csv")
       btn.addEventListener("click", () => {
 
         infoBox.innerHTML = `
+        <button class = "closeButton" id= "closeButton">✕</button>
           <h1>${name}</h1>
           <img src="clubLogos/${logo}" style="width:120px">
           <p>Description: ${description}</p>
@@ -52,9 +53,18 @@ fetch("Clubs - Clubs_Raw.csv")
         `;
         infoBox.classList.add("show")
         overlay.classList.add("show");
-
+        document.getElementById("closeButton").addEventListener("click", () => {
+            infoBox.classList.remove("show");
+            overlay.classList.remove("show");
+        });
       });
 
       buttonContainer.appendChild(btn);
     });
+    const overlay = document.getElementById("overlay");
+
+  overlay.addEventListener("click", () => {
+    infoBox.classList.remove("show");
+    overlay.classList.remove("show");
   });
+});
