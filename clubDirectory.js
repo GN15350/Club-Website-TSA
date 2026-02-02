@@ -7,7 +7,7 @@ const header = document.querySelector('.header');
             header.classList.remove('scrolled');
         }
     });
-fetch("Clubs - Clubs_Raw.csv")
+fetch("Clubs - Clubs.csv")
   .then(response => response.text())
   .then(csvText => {
     const parsed = Papa.parse(csvText, {
