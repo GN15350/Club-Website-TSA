@@ -283,6 +283,14 @@ body {
     display: none;
 }
 
+
+
+
+
+
+
+
+
 @media (max-width: 600px){ 
 .mainPhoto {
   object-fit: cover;
@@ -477,6 +485,12 @@ body, html {
 .littleTitle {
     margin-top: 0;
 }
+
+
+
+
+
+
 .grid {
   background-color: #EFEFEF;
 }
