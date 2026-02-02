@@ -195,6 +195,11 @@ body {
     flex-direction: row;
 }
 
+.reverseSection2 {
+    display: flex;
+    flex-direction: row;
+}
+
 
 .halfPhoto {
     width: 50%;
@@ -564,7 +569,60 @@ body, html {
 .littleTitle {
     margin-top: 0;
 }
-.grid {
-  background-color: #EFEFEF;
+
+.section1 {
+    text-align: center;
+    background-color: #EFEFEF;
+}
+
+.section2 {
+    flex-direction: column;
+}
+.halfPhoto {
+    width: 100%;
+}
+.column {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 4vh;
+}
+.header1 {
+    margin: 0;
+}
+
+.row {
+    flex-direction: column;
+    background-color: #EFEFEF;
+}
+
+.column2 {
+    padding: 1vh;
+}
+
+.blogPhoto {
+    width: 99%;
+    object-fit: cover;
+    height: auto;
+}
+
+.reverseSection2 {
+    flex-direction: column;
+}
+
+.column3{
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 3vh;
+}
+
+.column4 {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 3vh;
 }
 }
