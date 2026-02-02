@@ -3,8 +3,16 @@ body {
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 100vh;
+    height: 100svh;
     overflow-x: hidden;
+}
+
+body.no-scroll {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100svh;
+    overflow: hidden;
 }
 
 .background {
@@ -143,6 +151,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: #EFEFEF;
 }
 
 .heading {
@@ -229,7 +238,7 @@ body {
 }
 
 .halfPhoto {
-    width: 50vw;
+    width: 50%;
     height: auto;
     background-size: cover;
     background-position: center;
@@ -401,7 +410,10 @@ body {
 @media (max-width: 600px){
 .header {
     background-color: rgb(48, 48, 48);
-    height: 100vh;
+    min-height: 100svh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
     width: 60%;
     right: 0;
     z-index: 6;
@@ -415,6 +427,7 @@ body {
 }
 
 .header-background.show {
+    bottom: 0;
     top: 0;
     position: fixed;
     z-index: 5;
@@ -424,6 +437,8 @@ body {
     display: block;
     background-color: rgb(48, 48, 48);
 }
+
+
 
 .ourStory {
     margin: 2vh;
@@ -440,6 +455,8 @@ body {
 
 .clubDescription {
     margin: 2vh;
+    margin-top: 0vh;
+    margin-bottom: 3.5vh;
 }
 
 .viewAll2 {
@@ -478,11 +495,11 @@ body {
 }
 
 .overlay {
+    position: fixed;
     display: block;
     background-color: #292929;
     width: 100%;
     height: 100vh;
-    position: absolute;
     top: 0;
     right: 0;
     z-index: 5;
@@ -525,8 +542,8 @@ body {
 .bar {
     display: block;
     position: fixed;
-    width: 4.5vh;
-    top: 2vh;
+    width: 3vh;
+    top: 3vh;
     right: 2vh;
     z-index: 6;
 }
@@ -539,6 +556,7 @@ body {
     background-color: transparent;
     border: none;
     z-index: 6;
+    position: absolute;
 }
 
 .xButton {
@@ -556,14 +574,21 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    max-width: 100%;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
 
+body.no-scroll {
+    position: fixed;
+    overflow: hidden;
+    height: 100vh;
+}
+
 body, html {
-    max-width: 100%;
+    width: 100%;
     min-width: 100%;
+    background-color: rgb(48, 48, 48);
 }
 
 .layout3 {
@@ -571,6 +596,10 @@ body, html {
     width: 100%;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    background-color: #EFEFEF;
 }
 
 .logo {
@@ -583,6 +612,7 @@ body, html {
 
 .layout5 {
     flex-direction: column-reverse;
+    width: 100%;
 }
 
 .layout6 {
@@ -597,20 +627,32 @@ body, html {
     max-width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding: 0vh;
+    margin: 2vh;
 }
 
 .vertical3 {
     text-align: center;
-    max-width: 100%;
+    width: auto;
     justify-content: center;
     align-items: center;
     padding: 0;
+    margin: 4vh;
 }
+
+.clubDescription2 {
+    padding: 0;
+    margin: 3vh;
+}
+
+.heading3 {
+    margin: 0;
+}
+
 .footer {
-    max-width: 100%;
+    width: 100%;
     height: fit-content;
-    padding: 4vh;
+    padding-top: 4vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -646,6 +688,10 @@ body, html {
 
 .footerTitle {
     padding-top: 3vh;
+}
+
+.littleTitle {
+    margin-top: 0;
 }
 }
 #info {
