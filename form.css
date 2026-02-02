@@ -10,7 +10,7 @@ body {
     z-index: 1;
     background-color: black;
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
 }
 
 @font-face {
@@ -38,7 +38,7 @@ body {
     color: black;
     position: fixed;
     width: 100%;
-    height: 10dvh;
+    height: 10vh;
     top: 0;
     z-index: 6;
     padding: 0;
@@ -56,24 +56,24 @@ body {
   
 .header-right {
     display: flex;
-    gap: 2dvh;
-    right: 2dvh;
+    gap: 2vh;
+    right: 2vh;
     position: fixed;
 }
 
-.logo-main {
-    max-width: 9dvh;
+.logo-desktop {
+    max-width: 9vh;
     padding: 0;
     margin: 0;
     display: flex;
-    left: 2dvh;
+    left: 2vh;
     position: fixed;
     cursor: pointer;
 }
 
 .mainPhoto {
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
     opacity: 0.7;
     z-index: 2;
     position: absolute;
@@ -91,7 +91,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
     z-index: 3;
 }
 
@@ -101,7 +101,7 @@ body {
     z-index: inherit;
     font-family: Barlow;
     font-weight: bold;
-    font-size: 3dvh;
+    font-size: 3vh;
     margin-top: 0;
     padding-top: 0;
 }
@@ -110,7 +110,7 @@ body {
     color: white;
     z-index: inherit;
     font-family: Barlow-bold;
-    font-size: 13dvh;
+    font-size: 13vh;
     padding-bottom: 0;
     margin-bottom: 0;
     margin-top: 0vh;
@@ -119,12 +119,12 @@ body {
 
 .logo {
     padding: 2vh;
-    width: 50dvh;
+    width: 50vh;
 }
 
 
 .footer {
-    height: 15dvh;
+    height: 15vh;
     display: flex;
     flex-direction: row;
     background-color: rgb(48, 48, 48);
@@ -135,17 +135,17 @@ body {
 }
 
 .logoFooter {
-    max-width: 10dvh;
+    max-width: 10vh;
     height: auto;
     object-fit: contain;
-    left: 10dvh;
-    margin-left: 2dvh;
+    left: 10vh;
+    margin-left: 2vh;
 }
 
 .websiteName {
     font-size: 3svh;
     display: flex;
-    margin-left: 2dvh;
+    margin-left: 2vh;
 }
 
 .verticalFooter {
@@ -153,8 +153,8 @@ body {
     position: relative;
     flex-direction: column;
     justify-content: center;
-    padding-left: 5dvh;
-    padding-right: 3dvh;
+    padding-left: 5vh;
+    padding-right: 3vh;
 }
 
 .footerTitle {
@@ -167,8 +167,8 @@ body {
     display: flex;
     flex-direction: row;
     margin-left: auto;
-    padding-right: 2dvh;
-    gap: 6dvh;
+    padding-right: 2vh;
+    gap: 6vh;
 }
 
 
@@ -178,15 +178,248 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100dvh;
+    height: 100vh;
 }
 
 .bodyLayout iframe {
-    padding-top: 4dvh;
+    padding-top: 4vh;
     margin: 0;
-    min-height: 95dvh;
+    min-height: 95vh;
     width: 680px;
     border: 0;
     z-index: 1;
 
+}
+
+
+
+
+
+
+.overlay {
+    display: none;
+    position: absolute;
+}
+
+.x {
+    display: none;
+    position: absolute;
+}
+
+.bar {
+    display: none;
+}
+
+.xButton {
+    display: none;
+}
+
+.logo-mobile {
+    display: none;
+}
+
+.header-background {
+    display: none;
+}
+
+
+
+
+@media (max-width: 600px){ 
+.mainPhoto {
+  object-fit: cover;
+}
+.main-layout {
+  text-align: center;
+}
+.title {
+  font-size: 10vh
+}
+
+.littleTitle {
+  font-size: 2.5vh;
+}
+
+
+
+
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    top: 10vh;
+    text-align: end;
+    top: 13vh;
+    right: 8vh;
+    background-color: transparent;
+    font-size: 3vh;
+    gap: 3vh;
+    transition: transform 0.3s ease;
+}
+
+
+body, html {
+  background-color: rgb(48, 48, 48);
+}
+.header {
+    background-color: rgb(48, 48, 48);
+    min-height: 100svh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 60%;
+    right: 0;
+    z-index: 6;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.header.open {
+    transform: translateX(0);
+}
+
+.header-background.show {
+    bottom: 0;
+    top: 0;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    display: block;
+    background-color: rgb(48, 48, 48);
+}
+.overlay {
+    position: fixed;
+    display: block;
+    background-color: #292929;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+ .overlay.show {
+    pointer-events: auto;
+    display: block;
+
+    opacity: 0.7;
+  }
+  .logo-mobile {
+    max-width: 8vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    left: 2vh;
+    top: 2vh;
+    position: fixed;
+    cursor: pointer;
+    z-index: 6;
+}
+
+.x {
+    display: block;
+    position: absolute;
+    z-index: 7;
+    top: 2vh;
+    right: 2vh;
+    max-width: 5vh;
+}
+
+.xButton {
+    display: block;
+}
+
+.bar {
+    display: block;
+    position: fixed;
+    width: 3vh;
+    top: 3vh;
+    right: 2vh;
+    z-index: 6;
+}
+
+.logo-desktop {
+    display: none;
+}
+
+.barButton {
+    background-color: transparent;
+    border: none;
+    z-index: 6;
+    position: absolute;
+}
+
+.xButton {
+    background-color: transparent;
+    border: none;
+    z-index: 6;
+}
+
+.title {
+    text-align: center;
+    width: 100%;
+}
+body.no-scroll {
+    position: fixed;
+    overflow: hidden;
+    height: 100vh;
+}
+
+body, html {
+    width: 100%;
+    min-width: 100%;
+    background-color: rgb(48, 48, 48);
+}
+.footer {
+    width: 100%;
+    height: fit-content;
+    padding-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(48, 48, 48);
+    text-align: center;
+}
+
+.verticalFooter {
+    top: 0;
+    padding: 0;
+    margin: 0;
+   min-width: fit-content;
+}
+.footerRow {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+.websiteName {
+    margin: 0;
+    padding: 0;
+}
+.logoFooter {
+    margin-left: -1vh;
+    padding: 0;
+    left: 0;
+    padding-bottom: 0.5vh;
+}
+.footerP {
+    margin-top: 1vh;
+}
+
+.footerTitle {
+    padding-top: 3vh;
+}
+
+.littleTitle {
+    margin-top: 0;
+}
+.grid {
+  background-color: #EFEFEF;
+}
 }

@@ -603,7 +603,7 @@ body, html {
 }
 
 .logo {
-    width: 40dvh;
+    width: 40vh;
 }
 
 .layout4 {
@@ -699,5 +699,5 @@ body, html {
 }
 
 #info {
-    scroll-margin-top: 27dvh;
+    scroll-margin-top: 27vh;
 }
