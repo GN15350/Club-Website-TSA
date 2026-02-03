@@ -77,6 +77,7 @@ body {
     opacity: 0.7;
     z-index: 2;
     position: absolute;
+    object-fit: cover;
 }
 
 .headerLinks {
@@ -136,7 +137,7 @@ body {
 .logoFooter {
     max-width: 10vh;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
     left: 10vh;
     margin-left: 2vh;
 }
@@ -183,7 +184,7 @@ body {
 .clubLogo {
   width: 100px;       
   height: 100px;      
-  object-fit: contain; 
+  object-fit: cover; 
   margin-right: 8px;  
   vertical-align: middle; 
   margin-bottom: 5px;
@@ -290,7 +291,7 @@ body {
 
 
 
-@media (max-width: 600px){ 
+@media (max-width: 800px){ 
 .mainPhoto {
   object-fit: cover;
 }

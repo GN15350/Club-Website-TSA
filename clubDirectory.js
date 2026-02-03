@@ -112,7 +112,6 @@ function closeMenu() {
 
     body.classList.remove('no-scroll');
     body.style.top = '';
-    window.scrollTo(0, scrollPosition);
 
     headerBackground.classList.toggle("show", scrollPosition > 50);
 }

@@ -136,7 +136,7 @@ body {
 .logoFooter {
     max-width: 10vh;
     height: auto;
-    object-fit: contain;
+    object-fit: cover; 
     left: 10vh;
     margin-left: 2vh;
 }
@@ -215,7 +215,7 @@ body {
 
 
 
-@media (max-width: 600px){ 
+@media (max-width: 800px){ 
 .mainPhoto {
   object-fit: cover;
 }
