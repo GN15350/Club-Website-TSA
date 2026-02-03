@@ -1,11 +1,17 @@
+const header = document.querySelector('.header');
 
-document.getElementById("viewInfo")?.addEventListener("click", () => {
-    document.getElementById("info")?.scrollIntoView({
-        behavior: "smooth"
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
     });
-});
 
-const headerBackground = document.querySelector('.header-background');
+
+
+
+    const headerBackground = document.querySelector('.header-background');
 
 let scrollPosition = 0;
 let menuOpen = false;
@@ -19,7 +25,6 @@ window.addEventListener("scroll", () => {
 
 const bar = document.getElementById('bar');
 const x = document.getElementById('x');
-const header = document.querySelector('.header');
 const overlay = document.querySelector('.overlay');
 const body = document.body;
 
