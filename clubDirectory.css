@@ -225,13 +225,7 @@ body {
 
 }
 #overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.4);
-  opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s;
-  z-index: 1000;
 }
 
 #overlay.show {
@@ -367,6 +361,7 @@ body, html {
     z-index: 5;
     opacity: 0;
     transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
  .overlay.show {
