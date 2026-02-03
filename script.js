@@ -8,6 +8,7 @@ const header = document.querySelector('.header');
         }
     });
 
+    console.log("JS updated – force rebuild");
 
 
 
