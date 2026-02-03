@@ -490,3 +490,32 @@ body, html {
   background-color: #EFEFEF;
 }
 }
+
+
+
+.search-container {
+    z-index: 6;
+    width: fit-content;
+}
+
+.search {
+    width: 25vh;
+    height: 3vh;
+    border-radius: 30px;
+    border: solid white 3px;
+    background-color: transparent;
+    color: white;
+    padding-right: 1vh;
+    padding-left: 3vh;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.search-container i {
+    color: white;
+    position: absolute;
+    padding-left: 1.2vh;
+    padding-top: 1.1vh;
+}
