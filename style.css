@@ -511,6 +511,7 @@ body.no-scroll {
     z-index: 5;
     opacity: 0;
     transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
  .overlay.show {
