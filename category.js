@@ -14,9 +14,9 @@ const header = document.querySelector('.header');
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
-    header.classList.add('scrolled');
+	header.classList.add('scrolled');
   } else {
-    header.classList.remove('scrolled');
+	header.classList.remove('scrolled');
   }
 });
 
@@ -28,116 +28,116 @@ const overlay = document.getElementById("overlay");
 fetch("Clubs - categorizedClubs.csv")
   .then(response => response.text())
   .then(csvText => {
-    const parsed = Papa.parse(csvText, {
-      header: true,
-      skipEmptyLines: true
-    });
+	const parsed = Papa.parse(csvText, {
+	  header: true,
+	  skipEmptyLines: true
+	});
 
-    // Preload logos
-    parsed.data.forEach(club => {
-      if (club.logo) {
-        const img = new Image();
-        img.src = `clubLogos/${club.logo.trim()}`;
-      }
-    });
+	// Preload logos
+	parsed.data.forEach(club => {
+	  if (club.logo) {
+		const img = new Image();
+		img.src = `clubLogos/${club.logo.trim()}`;
+	  }
+	});
 
-    const buttonContainer = document.getElementById("clubButtons");
-    const infoBox = document.getElementById("clubInfo");
-    const searchInput = document.getElementById("clubSearch");
+	const buttonContainer = document.getElementById("clubButtons");
+	const infoBox = document.getElementById("clubInfo");
+	const searchInput = document.getElementById("clubSearch");
 
-    const clubItems = [];
+	const clubItems = [];
 
-    parsed.data.forEach(club => {
+	parsed.data.forEach(club => {
 
-      /* ===== CATEGORY FILTER ===== */
-      const category = (club.category || "").trim().toLowerCase();
+	  /* ===== CATEGORY FILTER ===== */
+	  const category = (club.category || "").trim().toLowerCase();
 
-      if (ACTIVE_CATEGORIES.length > 0 && !ACTIVE_CATEGORIES.includes(category)) return;
-      /* =========================== */
+	  if (ACTIVE_CATEGORIES.length > 0 && !ACTIVE_CATEGORIES.includes(category)) return;
+	  /* =========================== */
 
-      const name = club.name;
-      const description = club.description;
-      const teacherName = club.teacherName;
-      const logo = club.logo;
-      const presidentName = club.presidentName;
-      const meetings = club.meetings;
-      const sponsorRoom = club.room;
+	  const name = club.name;
+	  const description = club.description;
+	  const teacherName = club.teacherName;
+	  const logo = club.logo;
+	  const presidentName = club.presidentName;
+	  const meetings = club.meetings;
+	  const sponsorRoom = club.room;
 
-      // Extra button columns
-      const extraButtonLink = club.extraButtonLink || club.signups;
-      const extraButtonName = club.extraButtonName || (extraButtonLink ? "Sign Up" : "");
+	  // Extra button columns
+	  const extraButtonLink = club.extraButtonLink || club.signups;
+	  const extraButtonName = club.extraButtonName || (extraButtonLink ? "Sign Up" : "");
 
-      const btn = document.createElement("button");
-      btn.innerHTML = `
-        <img src="clubLogos/${logo}" class="clubLogo"><br>
-        <span>${name}</span>
-      `;
+	  const btn = document.createElement("button");
+	  btn.innerHTML = `
+		<img src="clubLogos/${logo}" class="clubLogo"><br>
+		<span>${name}</span>
+	  `;
 
-      btn.addEventListener("click", () => {
-        let extraButtonHTML = "";
+	  btn.addEventListener("click", () => {
+		let extraButtonHTML = "";
 
-        if (
-          extraButtonName &&
-          extraButtonLink &&
-          extraButtonName.trim() !== "" &&
-          extraButtonLink.trim() !== ""
-        ) {
-          extraButtonHTML = `
-            <div class="club-extra-button-container">
-              <a href="${extraButtonLink}" target="_blank" rel="noopener">
-                <button class="club-extra-button">
-                  ${extraButtonName}
-                </button>
-              </a>
-            </div>
-          `;
-        }
+		if (
+		  extraButtonName &&
+		  extraButtonLink &&
+		  extraButtonName.trim() !== "" &&
+		  extraButtonLink.trim() !== ""
+		) {
+		  extraButtonHTML = `
+			<div class="club-extra-button-container">
+			  <a href="${extraButtonLink}" target="_blank" rel="noopener">
+				<button class="club-extra-button">
+				  ${extraButtonName}
+				</button>
+			  </a>
+			</div>
+		  `;
+		}
 
-        infoBox.innerHTML = `
-          <button class="closeButton" id="closeButton">✕</button>
+		infoBox.innerHTML = `
+		  <button class="closeButton" id="closeButton">✕</button>
 
-          <h1>${name}</h1>
-          <img src="clubLogos/${logo}" style="width:120px">
+		  <h1>${name}</h1>
+		  <img src="clubLogos/${logo}" style="width:120px">
 
-          <p>Description: ${description}</p>
+		  <p>Description: ${description}</p>
 
-          <ul>
-            <li><strong>Meetings:</strong> ${meetings}</li>
-            <li><strong>President:</strong> ${presidentName}</li>
-            <li><strong>Sponsor:</strong> ${teacherName}, ${sponsorRoom}</li>
-          </ul>
+		  <ul>
+			<li><strong>Meetings:</strong> ${meetings}</li>
+			<li><strong>President:</strong> ${presidentName}</li>
+			<li><strong>Sponsor:</strong> ${teacherName}, ${sponsorRoom}</li>
+		  </ul>
 
-          ${extraButtonHTML}
-        `;
+		  ${extraButtonHTML}
+		`;
 
-        infoBox.classList.add("show");
-        overlay.classList.add("show");
+		infoBox.classList.add("show");
+		overlay.classList.add("show");
 
-        document.getElementById("closeButton").addEventListener("click", () => {
-          infoBox.classList.remove("show");
-          overlay.classList.remove("show");
-        });
-      });
+		document.getElementById("closeButton").addEventListener("click", () => {
+		  infoBox.classList.remove("show");
+		  overlay.classList.remove("show");
+		});
+	  });
 
-      buttonContainer.appendChild(btn);
+	  buttonContainer.appendChild(btn);
 
-      clubItems.push({
-        button: btn,
-        searchText: `${name} ${description} ${teacherName} ${presidentName}`.toLowerCase()
-      });
-    });
+	  clubItems.push({
+		button: btn,
+		searchText: `${name} ${description} ${teacherName} ${presidentName}`.toLowerCase()
+	  });
+	});
 
-    /* ================= SEARCH ================= */
+	/* ================= SEARCH ================= */
 
-    searchInput.addEventListener("input", () => {
-      const query = searchInput.value.toLowerCase();
+	searchInput.addEventListener("input", () => {
+	  const query = searchInput.value.toLowerCase();
 
-      clubItems.forEach(item => {
-        item.button.style.display = item.searchText.includes(query)
-          ? "inline-block"
-          : "none";
-      });
-    });
+	  clubItems.forEach(item => {
+		item.button.style.display = item.searchText.includes(query)
+		  ? "inline-block"
+		  : "none";
+	  });
+	});
   });
 
 
@@ -193,13 +193,13 @@ overlay.addEventListener("click", () => {
 
   // Close popup first if open
   if (infoBox.classList.contains("show")) {
-    infoBox.classList.remove("show");
-    overlay.classList.remove("show");
-    return;
+	infoBox.classList.remove("show");
+	overlay.classList.remove("show");
+	return;
   }
 
   // Otherwise close menu
   if (menuOpen) {
-    closeMenu();
+	closeMenu();
   }
 });
