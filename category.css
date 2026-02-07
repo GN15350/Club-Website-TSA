@@ -484,6 +484,7 @@ body, html {
 
 
 
+
 .search-container {
 	z-index: 6;
 	width: fit-content;
@@ -497,7 +498,8 @@ body, html {
 	background-color: transparent;
 	color: white;
 	padding-right: 1vh;
-	padding-left: 3vh;
+	padding-left: 6vh;
+    
 }
 
 input[type="text"]:focus {
@@ -521,4 +523,8 @@ input[type="text"]:focus {
 	color: white;
 	background-color: black;
 	font-family: Barlow;
+}
+.search::placeholder {
+  color: white;
+  opacity: 1;
 }
